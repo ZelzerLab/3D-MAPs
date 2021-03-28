@@ -17,3 +17,6 @@ This process should take less than 10 minutes.
 2. Download the files from the 3D MAPS repository. You can do this by cloning the repository or by downloading it as a ZIP folder.
 3. Unzip the folder and place your data inside of the folder titled "data" (See Running 3D MAPs).
 
+
+## License
+[Apache-2.0](https://opensource.org/licenses/Apache-2.0)
