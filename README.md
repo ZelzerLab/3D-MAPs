@@ -15,7 +15,7 @@ This process should take less than 10 minutes.
 
 1. Install MATLAB version 2016b or later.
 2. Download the files from the 3D MAPS repository. You can do this by cloning the repository or by downloading it as a ZIP folder.
-3. Unzip the folder and place your data inside of the folder titled "data" (See Running 3D MAPs).
+3. Unzip the folder and place your data inside of the folder titled "data" (See Running 3D MAPs). Sample data can be found in the supplementary section of the manuscript.
 
 
 ## License
