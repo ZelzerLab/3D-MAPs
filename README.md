@@ -26,11 +26,12 @@ Here we perform registration of growth plates based on an eigenvector matrix.
 
 1. Make sure the following are inside the data\subfolder
 
-      Tile_coordinates.xlsx 
 
-      c_n_pos01 (Characteristics).mat,
-      c_n_pos02 (Characteristics).mat,
-      c_n_pos03 (Characteristics).mat, ... etc
+       Tile_coordinates.xlsx 
+
+       c_n_pos01 (Characteristics).mat,
+       c_n_pos02 (Characteristics).mat,
+       c_n_pos03 (Characteristics).mat, ... etc
 
 2. Open the script "Bone_registration_using_eigenvector" in MATLAB by double clicking it.
 
@@ -61,9 +62,11 @@ mycolor={'r*','b*'};
 ```
 
 8.  Run "manualRegistrationCheck" from the script editor or command line. It will create a file called  Alignment_matrix file in the parent directory. Rename it as  Alignment_matrix.dat and place each into its own subfolder directory.
-```
-data\Nuclei_and_Cells_DU_S96_m3_mut\Alignment_matrix.dat
-```
+
+
+        data\Nuclei_and_Cells_DU_S96_m3_mut\Alignment_matrix.dat
+
+
 
 ## License
 [Apache-2.0](https://opensource.org/licenses/Apache-2.0)
