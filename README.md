@@ -6,7 +6,7 @@ This code was written by Paul Villoutreix and Ankit Agrawal. To learn about 3D M
 
 ## System Requirements
 
-Linux, Windows and Mac OS are supported for running the code. 3D MAPs scripts are written and compiled with MATLAB version R2016b and depend on MATLAB toolbox "Statistics and Machine Learning Toolbox". It requires at least 8GB RAM, but was tested primarily on a workstation with Windows 10 and 512 GB RAM. 
+Linux, Windows and Mac OS are supported for running the code. 3D MAPs scripts are written and compiled with MATLAB version R2016b and depend on MATLAB toolbox "Statistics and Machine Learning Toolbox" and "symbolic math toolbox". It requires at least 8GB RAM, but was tested primarily on a workstation with Windows 10 and 512 GB RAM. 
 
 ## Installation
 
