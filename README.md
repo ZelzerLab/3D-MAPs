@@ -14,7 +14,7 @@ This process should take less than 10 minutes.
 
 1. Install MATLAB version 2016b or later.
 2. Download the files from the 3D MAPS repository. You can do this by cloning the repository or by downloading it as a ZIP folder.
-3. Unzip the folder and place your data inside of the folder titled "data" (See Running 3D MAPs). An example dataset can be found in the supplementary section of the manuscript.
+3. Unzip the folder and place your data inside of the folder titled "data". An example dataset can be found in the supplementary section of the manuscript.
 
 
 
@@ -69,7 +69,8 @@ mycolor={'r*','b*'};
 ## Running 3D MAPs
 This script produces interactive matlab figures and .png image files of 3D Morphology maps and two types of spatial profiles: spatial profile of the grid averages and a spatial profile of individual cells and nuclei to be used for statistical analysis. 
 
-Cell and Nuclei features: volume (micron^3), surface area (micron^2), sphericity, vol^2/3/sa, density, delaunay density, object number, PC 1/2/3 coefficient and orientation, ratio of PC 2/1, ratio of PC 3/2, ratio of PC 3/1, and occupation (%).
+
+Cell and Nuclei features: volume (micron<sup>3</sup>), surface area (micron<sup>2</sup>), sphericity, vol<sup>2/3</sup>/sa, density, delaunay density, object number, PC 1/2/3 coefficient and orientation, ratio of PC 2/1, ratio of PC 3/2, ratio of PC 3/1, and occupation (%).
 
 Crossed features (features relating cells and nuclei): nucleus/cell volume ratio, % correspondence, object number, centroid shift (%), nucleus and cell alignment of PC 1/2/3.
  
@@ -94,6 +95,14 @@ Crossed features (features relating cells and nuclei): nucleus/cell volume ratio
 
 ![image](https://user-images.githubusercontent.com/58815992/112813155-92edaf80-9086-11eb-8e45-01ee1de29d5d.png)
 
+*Notes: After running the first time the following files will be created in the data path. These are required to produce the figures. This part takes the longest. If you want to start over from scratch, i.e. more (characteristics).mat files were added or modified, then delete the following files and run the main script again.
+
+![image](https://user-images.githubusercontent.com/58815992/112814949-79e5fe00-9088-11eb-97cd-00cf994f22bb.png)
+
+
+If you only want to change the grid size then delete only the grid files highlighted below.
+
+![image](https://user-images.githubusercontent.com/58815992/112814835-5d49c600-9088-11eb-99a7-7a191c541435.png)
 
 
 ## License
