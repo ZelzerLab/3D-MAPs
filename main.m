@@ -27,7 +27,6 @@ addpath(fullfile(root_dir, 'utils'));
 presets
 
 
-
 duwtpath={ 'data\Nuclei_and_Cells_DU_S84_m3_wt\'};
 %dumtpath={ 'data\NUclei_and_Cells_S51_m2_du_thresh05\','data\Nuclei_and_Cells_S84_m2_du_thresh05\','data\Nuclei_and_Cells_S84_m3_du_thresh05\'};
          
@@ -96,7 +95,9 @@ opt.allometric.limit=[8,32,40,opt.ProximalDistal_binsize];
 
 opt.AllStatisticalTest=1;
 opt.onlyAllometricTest=1;
-perform_statistical_test_on_avg_profile(wildTypesBones, mutantBones,wt_bone_name, mt_bone_name,outputpath,opt);
+if exist('mutantBones','var') == 1
+    perform_statistical_test_on_avg_profile(wildTypesBones, mutantBones,wt_bone_name, mt_bone_name,outputpath,opt);
+end
 
 
 
