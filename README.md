@@ -74,6 +74,8 @@ Cell and Nuclei features: volume (micron^3), surface area (micron^2), sphericity
 Crossed features (features relating cells and nuclei): nucleus/cell volume ratio, % correspondence, object number, centroid shift (%), nucleus and cell alignment of PC 1/2/3.
  
 1. Open the script "main" in MATLAB by double clicking it.
+2. Initialize and set the data path.
+![image](https://user-images.githubusercontent.com/58815992/112810236-7e5be800-9083-11eb-893d-867919d35533.png)
 
 ## License
 [Apache-2.0](https://opensource.org/licenses/Apache-2.0)
