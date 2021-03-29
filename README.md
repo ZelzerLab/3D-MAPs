@@ -80,6 +80,13 @@ Crossed features (features relating cells and nuclei): nucleus/cell volume ratio
 3. Set the grid size for averaging and the bin size for the two types of spatial profiles.
 ![image](https://user-images.githubusercontent.com/58815992/112810752-09d57900-9084-11eb-8e57-81359467b531.png)
 
+4. Set the viewing angle of the 3D morphology maps.
+![image](https://user-images.githubusercontent.com/58815992/112811159-72bcf100-9084-11eb-979d-56f9e0d24517.png)
+
+5. Set which maps you want to run. 1 = run 0 = don't run. It is recommended to run all of the maps at least once,to evaluate the data. 
+![image](https://user-images.githubusercontent.com/58815992/112812567-f5927b80-9085-11eb-9578-895481be8896.png)
+
+
 
 ## License
 [Apache-2.0](https://opensource.org/licenses/Apache-2.0)
