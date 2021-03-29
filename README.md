@@ -66,7 +66,14 @@ mycolor={'r*','b*'};
 
         data\Nuclei_and_Cells_DU_S96_m3_mut\Alignment_matrix.dat
 
+## Running 3D MAPs
+This script produces interactive matlab figures and .png image files of 3D Morphology maps and two types of spatial profiles: spatial profile of the grid averages and a spatial profile of individual cells and nuclei to be used for statistical analysis. 
 
+Cell and Nuclei features: volume (micron^3), surface area (micron^2), sphericity, vol^2/3/sa, density, delaunay density, object number, PC 1/2/3 coefficient and orientation, ratio of PC 2/1, ratio of PC 3/2, ratio of PC 3/1, and occupation (%).
+
+Crossed features (features relating cells and nuclei): nucleus/cell volume ratio, % correspondence, object number, centroid shift (%), nucleus and cell alignment of PC 1/2/3.
+ 
+1. Open the script "main" in MATLAB by double clicking it.
 
 ## License
 [Apache-2.0](https://opensource.org/licenses/Apache-2.0)
