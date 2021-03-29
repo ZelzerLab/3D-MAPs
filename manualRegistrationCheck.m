@@ -30,7 +30,7 @@ bigvec{2}=[-2.299e-17	6.3439e-18	1
 
 h1=figure;
 count=1;
-for i=[1,2];%put all the bone here one by one to check alignment with sample 1 
+for i=[length(dt_data_path)];%put all the bone here one by one to check alignment with sample 1 
     data=load([dt_data_path{i},'AlignedXYZ.mat']);
     vec=bigvec{i};
     V=[data.alphaShapeAll];
