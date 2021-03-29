@@ -32,13 +32,12 @@ h1=figure;
 count=1;
 for i=[1,2];%put all the bone here one by one to check alignment with sample 1 
     data=load([dt_data_path{i},'AlignedXYZ.mat']);
-    %vec=data.vec;
     vec=bigvec{i};
     V=[data.alphaShapeAll];
     
     
     %The angle of rotation are chosen manually to visualize the bone that
-    %they bulge are aligned together 
+    %they both are aligned together 
     if i==1
          %Rotation should done only for required sample 
          vec=vec*RotationMatrix_X(pi)*RotationMatrix_Y(pi);
@@ -96,61 +95,6 @@ ylabel('y')
 zlabel('z')
 axis image
 view(42,11)
-
-
-
-%saveas(h1,['PT_registered_bone_Together_']);
-%saveas(h1,['PT_registered_bone_Together_.png']);
-
-
-    
-    
-% factor=2.5;
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,2),factor*vec(2,2),factor*vec(3,2),d(2),'k','LineWidth',3);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,2),-factor*vec(2,2),-3*vec(3,2),d(2),'k','LineWidth',3);
-% 
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,1),factor*vec(2,1),3*vec(3,1),d(1),'b','LineWidth',3);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,1),-factor*vec(2,1),-3*vec(3,1),d(1),'b','LineWidth',3);
-% 
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,3),factor*vec(2,3),factor*vec(3,3),d(3),'m','LineWidth',3);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,3),-factor*vec(2,3),-factor*vec(3,3),d(3),'m','LineWidth',3);
-% hold off;
-%         
-
-% 
-% 
-% [vec,val]=eig(cov(V2.V));
-% V2=V2.V;%*vec;  V2=V2*RotationMatrix(pi);
-% d = sqrt(diag(val));
-% hold on;
-% [vec,val]=eig(cov(V2));
-% %plot(shp)
-% mu=mean(V2);
-% plot3(V2(:,1),V2(:,2),V2(:,3),'g*','markersize',2)
-% % factor=0.5;
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,2),factor*vec(2,2),factor*vec(3,2),d(2),'k','LineWidth',7);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,2),-factor*vec(2,2),-3*vec(3,2),d(2),'k','LineWidth',7);
-% 
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,1),factor*vec(2,1),3*vec(3,1),d(1),'b','LineWidth',7);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,1),-factor*vec(2,1),-3*vec(3,1),d(1),'b','LineWidth',7);
-% 
-% quiver3(mu(1),mu(2),mu(3),factor*vec(1,3),factor*vec(2,3),factor*vec(3,3),d(3),'m','LineWidth',7);
-% quiver3(mu(1),mu(2),mu(3),-factor*vec(1,3),-factor*vec(2,3),-factor*vec(3,3),d(3),'m','LineWidth',7);
-% hold off;
-%         
-% 
-% 
-% [vec,val]=eig(cov(V3.V));
-% V3=V3.V;%*vec;
-% d = sqrt(diag(val));
-% hold on;
-% [vec,val]=eig(cov(V3));
-% %plot(shp)
-% mu=mean(V3);
-% plot3(V3(:,1),V3(:,2),V3(:,3),'b*','markersize',2)
-% 
-
-
 
 
 
