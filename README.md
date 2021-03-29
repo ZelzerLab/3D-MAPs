@@ -22,9 +22,9 @@ This process should take less than 10 minutes.
 
 This step is not required if the input data is already aligned or if you do not want to produce a spatial profile along a specific axis. 
 
-Here we perform registration of growth plates based on an eigenvector matrix.
+Here we perform registration of growth plates based on the principal eigenvector of the centroids of the nuclei.
 
-1. Make sure the following are inside the data\subfolder
+1. Make sure the following are inside the data\subfolder. For example, if the data directory name is "Nuclei_and_Cells_DU_S96_m3_mut" then make sure the following files are inside the data\Nuclei_and_Cells_DU_S96_m3_mut
 
 
        Tile_coordinates.xlsx 
@@ -33,16 +33,21 @@ Here we perform registration of growth plates based on an eigenvector matrix.
        c_n_pos02 (Characteristics).mat,
        c_n_pos03 (Characteristics).mat, ... etc
 
-2. Open the script "Bone_registration_using_eigenvector" in MATLAB by double clicking it.
+2. Open the script "Bone_registration_using_eigenvector" and set the directory of each growth plate sample which you want to register.
+If you want to register both proximal and distal samples of the same type of growth plate then ignore_distal and ignore_proximal variables are false.
+Otherwise depending on the availability of distal or proximal samples these variables should be defined as true or false.
 
-3. Set the following variables as "true" or "false" depending if you are registering proximal or distal growth plates. The following code below will register only the distal growth plates in the data\subfolder
 
  ```
 ignore_distal=false;
 ignore_proximal=true;
 
 ```
-4. Set the data path
+
+
+
+4. Set the data path.
+Below is an example for setting the data path of two distal ulna samples.
 
 ```
 path_distal='data\Nuclei_and_Cells_DU_S84_m3_wt\','data\Nuclei_and_Cells_DU_S96_m3_mut\';
@@ -65,6 +70,8 @@ mycolor={'r*','b*'};
 
 
         data\Nuclei_and_Cells_DU_S96_m3_mut\Alignment_matrix.dat
+
+*Notes: If the alignment is not good enough, the rotation matrices can be multiplied with required angles to get the new 3x3 rotation matrix for correct alignment between bone samples. 
 
 ## Running 3D MAPs
 This script produces interactive matlab figures and .png image files of 3D Morphology maps and two types of spatial profiles: spatial profile of the grid averages and a spatial profile of individual cells and nuclei to be used for statistical analysis. 
