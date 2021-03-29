@@ -170,7 +170,6 @@ end
 
 
 if ignore_distal==false
-   %dlmwrite(strcat(distal_data_path,'Alignment_matrix.dat'),[vec],'\t');
    saveas(h1,[distal_data_path,'BoneAlphaShape','.png']);
    saveas(h2,[distal_data_path,'registration','.png']);
    M=DTPT(indDT,:);
@@ -179,7 +178,6 @@ end
 
 
 if ignore_proximal==false
-   %dlmwrite(strcat(proximal_data_path,'Alignment_matrix.dat'),[vec],'\t');
    saveas(h1,[proximal_data_path,'BoneAlphaShape','.png']);
    saveas(h2,[proximal_data_path,'registration','.png']);
    M=DTPT(indPT,:);
