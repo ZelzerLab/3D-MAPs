@@ -1,4 +1,6 @@
-# 3D MAPs
+# 3D MAPs 
+
+![image](https://user-images.githubusercontent.com/58815992/112968685-33120a00-9155-11eb-82f9-8bdd4cc9308e.png)
 
 3D MAPs performs morphometric and statistical analysis of cells and nuclei in a whole tissue in matlab. 
 
